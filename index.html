@@ -59,24 +59,57 @@
         <h2>About.
           <hr>
         </h2>
-        <div class="Puse">
-          <img src="imgs/Puse Edits_5.jpg">
-          <div>
+
+        <div class="about-container">
+          <div class="about-img">
+            <img src="imgs/Puse Edits_5.jpg" alt="Photo of Pusetso Mguzulwa">
+          </div>
+
+          <div class="about-content">
             <p>A certified IT technician, web developer, and current video editor with a passion for computer science. I
               am a hardworking and motivated individual with excellent communication skills and a strong desire to
               learn. I have a track record of refining my technical and social skills through my work as a video editor
-              and training as an IT technician and web developer.</p>
-            <p>I am actively seeking opportunities to gain hands-on experience and develop my skills further, while also
-              contributing to the success of the company I work for. I am open to collaboration and internship, or
-              apprenticeship programs to help me achieve this goal. In a world full of AI and automated tools to help
-              showcase your creativity, a human touch can take you and or your company a step further.</p>
-            <p>I am committed to continuous learning and development, and I strive to stay up-to-date with the latest
-              industry trends and best practices. I am a strong communicator and collaborator, and I thrive in
-              fast-paced and dynamic work environments. I am confident that I can bring value to any company that I work
-              for through my technical expertise and my strong work ethic.</p>
+              and training as an IT technician and web developer. I am actively seeking opportunities to gain hands-on
+              experience and develop my skills further, while also contributing to the success of the company I work
+              for.</p><br>
+            <p>I am open to collaboration and internship, or apprenticeship programs to help me achieve this goal. In a
+              world full of AI and automated tools to help showcase your creativity, a human touch can take you and or
+              your company a step further. I am committed to continuous learning and development, and I strive to stay
+              up-to-date with the latest industry trends and best practices. I am a strong communicator and
+              collaborator, and I thrive in fast-paced and dynamic work environments. I am confident that I can bring
+              value to any company that I work for through my technical expertise and my strong work ethic.</p>
+            <h3>Academic Certificates</h3>
+            <div class="certificates">
+              <div class="certificate" onclick="openModal('Criminal-Justice-Cert.pdf')">
+                <img src="imgs/certificates/Criminal-Justice-Cert.jpg" alt="Criminal Justice Cert" loading="lazy">
+              </div>
+              <div class="certificate" onclick="openModal('IT-Certification.pdf')">
+                <img src="imgs/certificates/IT-Certification.png" alt="IT Support Cert" loading="lazy">
+              </div>
+              <div class="certificate" onclick="openModal('Coursera-WordPress.pdf')">
+                <img src="imgs/certificates/Coursera-WordPress.png" alt="Coursera WordPress Certificate" loading="lazy">
+              </div>
+              <div class="certificate" onclick="openModal('datacamp-Python.pdf')">
+                <img src="imgs/certificates/datacamp-Python.png" alt="DataCamp Python Certificate" loading="lazy">
+              </div>
+              <div class="certificate" onclick="openModal('PLP-software-developer.pdf')">
+                <img src="imgs/certificates/PLP-software-developer.png" alt="PLP Software Developer Certificate" loading="lazy">
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- PDF Modal -->
+      <div id="pdfModal" class="modal">
+        <div class="modal-header">
+       <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <button class="nav-btn prev" onclick="prevCert()">&#10094;</button>
+        <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+        <button class="nav-btn next" onclick="nextCert()">&#10095;</button>
+      </div>>
+
       <!--───────────────Projects───────────────-->
       <div id="projects">
         <h2>My Projects.
@@ -175,7 +208,8 @@
               <h3>Video Editing Projects</h3>
               <p>Here you will find some of the video edits I have made. From News editing during my years with PNWTV
                 as the station's News Video Editor to freelance edits of events such as weddings outside of work. Most
-                News related video edits can be found <a href="https://pnwtv.co.za/news-ditaba/" target="_blank">here</a>.</p>
+                News related video edits can be found <a href="https://pnwtv.co.za/news-ditaba/"
+                  target="_blank">here</a>.</p>
               <div class="project-links">
                 <a href="https://github.com/pusetsom/ContinentalBankingSite" target="_blank" class="project-link">
                   <i class="fab fa-youtube"></i> Video Edits
@@ -253,6 +287,5 @@
 
   </div>
 </body>
-
 
 </html>
