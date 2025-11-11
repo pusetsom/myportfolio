@@ -1,9 +1,9 @@
 let currentCertIndex = 0;
 let certFiles = [
-	"Criminal-Justice-Cert.pdf",
-	"IT-Certification.pdf",
-	"Coursera-WordPress.pdf",
-	"datacamp-Python.pdf",
+	"criminal-justice-cert.pdf",
+	"IT-certification.pdf",
+	"coursera-wordpress.pdf",
+	"datacamp-python.pdf",
 	"PLP-software-developer.pdf",
 ];
 
@@ -39,3 +39,4 @@ document.addEventListener("keydown", function (e) {
 
 //Disable right-click on the entire document
 document.addEventListener('contextmenu', e => e.preventDefault());
+
