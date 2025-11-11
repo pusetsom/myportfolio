@@ -590,6 +590,10 @@ footer {
     visibility: hidden !important;
     pointer-events: none !important;
   }
+
+  .about-content p {
+  padding-top: 10px;
+}
 }
 
 /*----Prevent text/image selection and dragging----*/
