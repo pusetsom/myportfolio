@@ -4,7 +4,7 @@ let certFiles = [
 	"IT-certification.pdf",
 	"coursera-wordpress.pdf",
 	"datacamp-python.pdf",
-	"PLP-software-developer.pdf",
+	"plp-software-developer.pdf",
 ];
 
 function openModal(pdfFile) {
