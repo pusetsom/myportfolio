@@ -227,7 +227,7 @@ h3 {
   justify-content: center;
 }
 
-.about-content p{
+.about-content p {
   padding-top: 60px;
 }
 
@@ -345,7 +345,7 @@ h3 {
   right: 5%;
 }
 
- .modal .close{
+.modal .close {
   position: absolute;
   top: 30px;
   right: 40px;
@@ -554,28 +554,7 @@ Responsive form styling
   text-shadow: 0 0 50px var(--main-decor-color);
 }
 
-/*────────────────── 
-     Scrollbar
-──────────────────*/
-::-webkit-Scrollbar {
-  width: 5px;
-  background: rgba(5, 5, 5, 1);
-}
-
-::-webkit-Scrollbar-thumb {
-  border-radius: 10px;
-  background: var(--main-decor-color);
-  box-shadow: inset 0 0 20px var(--main-decor-color);
-}
-
-::-webkit-Scrollbar-track {
-  margin-top: 80px;
-  border-radius: 10px;
-}
-
-/*────────────────── 
-       footer
-──────────────────*/
+/*────── footer ────*/
 
 footer {
   width: 100%;
@@ -602,90 +581,31 @@ footer {
   color: var(--main-decor-color);
 }
 
-/*────────────────── 
-    media queries
-──────────────────*/
+/* --- Hide nav on small devices --- */
+@media (max-width: 1024px) {
 
-@media only screen and (max-width: 1484px) and (min-width: 1214px) {
-  .work {
-    padding: 20px 20%;
-  }
-}
-
-@media only screen and (max-width: 1214px) and (min-width: 1000px) {
-  .work {
-    padding: 20px 12%;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-
-  #home,
-  #about,
-  #projects,
-  #contact {
-    overflow-x: hidden;
-  }
-
+  /* hide the nav links and hamburger entirely on phones/tablets */
   header {
-    background-color: var(--main-header-background);
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
   }
-
-  .logo {
-    position: absolute;
-    top: 2px;
-    left: 30px;
-  }
-
-  .nav-show {
-    opacity: 1;
-  }
-
-  .nav-bar {
-    position: fixed;
-    right: 0;
-    width: 60%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background: rgba(33, 37, 46, 0.8);
-    transform: translatex(100%);
-    transition: transform 0.5s ease-in;
-    z-index: -1;
-  }
-
-  .nav-link:hover {
-    color: #000000;
-    background: var(--main-decor-color);
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  .hamburger {
-    position: absolute;
-    top: 19px;
-    right: 2%;
-    display: block;
-    cursor: pointer;
-    z-index: 5;
-  }
-
-  .about-img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  }
-
-  .about-content p{
-  padding-top: 0px;
-}
-.nav-active {
-  transform: translatex(0%);
-}
 }
 
+/*----Prevent text/image selection and dragging----*/
+body,
+html {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img,
+.about-img,
+.project-image {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
