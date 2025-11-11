@@ -1,7 +1,7 @@
 let currentCertIndex = 0;
 let certFiles = [
 	"criminal-justice-cert.pdf",
-	"IT-certification.pdf",
+	"it-certification.pdf",
 	"coursera-wordpress.pdf",
 	"datacamp-python.pdf",
 	"plp-software-developer.pdf",
